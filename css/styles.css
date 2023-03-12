@@ -1,0 +1,420 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+head, body, footer {
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    line-height: 1.2rem;
+    color: var(--yellow-main-color);
+    text-align: center;
+}
+
+
+/* -----> NAV <----- */
+
+nav ul {
+    background-color: #EDFFE3;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    color: #67BC45;
+    align-self: center;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 13px;
+    font-size: 27px;
+    background-color: #9F1D21;
+}
+
+nav a:link, nav a:visited {
+    background-color: #9F1D21;
+    color: #67BC45;  
+    text-align: center;
+    text-decoration: none; 
+}
+
+nav a:active, nav a:hover {
+    background-color: #67BC45;
+    color: #9F1D21;
+}
+
+
+/* ----> HOME PAGE <---- */
+
+.home-page {
+    background-image: url(../images/Image_2.png);
+    background-size: cover;
+    background-position-y: -90px;
+    padding: 10px;
+    margin-top: -20px;
+}
+   .home-page h1 {
+    border: solid 1px black;
+    border-radius: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 27px;
+    font-weight: bold;
+    background-color: #67BC45;
+    color: #9F1D21;
+}
+
+
+/* ----> VISION <---- */
+
+.section-vision {
+    background-color: #EDFFE3;
+    margin-top: -20px;
+}
+
+.section-vision img {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.section-vision h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: right;
+}
+ 
+.section-vision p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    padding-bottom: 40px;
+    text-align: right;
+}   
+  
+
+/* ----> MISSION <---- */    
+
+.section-mission {
+    background-color: #ffe3e8;
+    margin-top: -20px;
+}
+
+.section-mission img {
+    display: flex;
+    margin-left: 250px;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.section-mission h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.section-mission p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+}
+
+
+/* ----> DELIVERY <---- */    
+
+.section-delivery {
+    background-color: #d4dfff;
+}
+
+.section-delivery h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.section-delivery p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+    padding-bottom: 75px;
+}
+
+
+/* ----> HISTORY <---- */
+
+.section-history {
+    background-color: #EDFFE3;
+    margin-top: -20px;
+}
+
+.section-history img {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+    padding-top: 20px;
+    width: 112px;
+    height: 96px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.section-history h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: right;
+    padding-bottom: 20px;
+}
+ 
+.section-history p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+}   
+
+
+/* ----> WHY <---- */    
+
+.section-why {
+    background-color: #ffe3e8;
+    margin-top: -20px;
+    padding-bottom: 70px;
+}
+
+.section-why img {
+    padding-top: 20px;
+}
+
+.section-why h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.section-why p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+    
+}
+
+
+/* ----> INFO <---- */
+
+.section-info {
+    background-color: #EDFFE3;
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+
+.section-info img {
+    display: flex;
+    margin: 20px;
+    text-align: left;
+    padding-top: 20px;
+    width: 112px;
+    height: 96px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.section-info h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+ 
+.section-info p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+}   
+
+
+/* ----> CEO <---- */    
+
+.section-ceo {
+    background-color: #ffe3e8;
+    margin-top: -20px;
+    padding-bottom: 5px;
+}
+
+
+.section-ceo h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.section-ceo h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.section-ceo p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+    
+}
+
+
+/* ----> SEND <---- */    
+
+.section-send {
+    background-color: #d4dfff;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.section-send input[type=text] #name  {
+    padding-left: 20px;
+}
+
+input[type=text] {
+	width: 90%;
+	padding: 10px 20px;
+	margin: 10px 10px 20px 20px;
+	box-sizing: border-box;
+	border: 1px solid black;
+  }
+
+input[id=message] {
+	width: 90%;
+	padding-bottom: 200px;
+    padding-right: -30px;
+    margin: 10px 10px 20px 20px;
+	box-sizing: border-box;
+	border: 1px solid black;
+  }
+
+
+input[type=submit] {
+	display: flex;
+	background-color: #67BC45;
+    color: #9F1D21;
+	padding: 5px 10px;
+	font-size: 18px;
+    font-weight: bold;
+	cursor: pointer;
+	border: 1px solid black;
+    margin-bottom: 50px;
+    margin-left: 20px ;
+  }
+
+
+
+/* ----> FOOTER <---- */
+footer {
+    background-image: url(../images/Image_2.png);
+    background-size: cover;
+    margin-top: -20px;
+}
+
+footer h3, h4 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    justify-self: end;
+    padding-left: 10px;
+} 
+
+footer h5, h6 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+} 
+
+footer h3 {
+    padding-top: 10px;
+}
+
+footer h6 {
+    padding-bottom: 10px;
+}
+
+
+
+
