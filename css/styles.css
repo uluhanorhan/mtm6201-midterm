@@ -96,7 +96,7 @@ nav a:active, nav a:hover {
 /* ----> HOME PAGE <---- */
 
 .home-page {
-    background-image: url(../images/Image_2.png);
+    background-image: url(../images/Image_6.png);
     background-size: cover;
     background-position-y: -90px;
     padding: 10px;
@@ -387,7 +387,7 @@ input[type=submit] {
 
 /* ----> FOOTER <---- */
 footer {
-    background-image: url(../images/Image_2.png);
+    background-image: url(../images/Image_6.png);
     background-size: cover;
     margin-top: -20px;
 }
