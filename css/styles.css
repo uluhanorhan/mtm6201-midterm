@@ -55,6 +55,10 @@ head, body, footer {
     text-align: center;
 }
 
+p {
+    color: black;
+    text-decoration: none;
+}
 
 /* -----> NAV <----- */
 
@@ -144,7 +148,7 @@ nav a:active, nav a:hover {
     padding-bottom: 40px;
     text-align: right;
 }   
-  
+ 
 
 /* ----> MISSION <---- */    
 
@@ -300,6 +304,7 @@ nav a:active, nav a:hover {
     font-weight: bold;
     margin: 20px;
     text-align: left;
+
 }   
 
 
@@ -310,7 +315,6 @@ nav a:active, nav a:hover {
     margin-top: -20px;
     padding-bottom: 5px;
 }
-
 
 .section-ceo h2 {
     font-size: 25px;
@@ -358,17 +362,15 @@ input[type=text] {
 	margin: 10px 10px 20px 20px;
 	box-sizing: border-box;
 	border: 1px solid black;
-  }
+}
 
 input[id=message] {
 	width: 90%;
 	padding-bottom: 200px;
-    padding-right: -30px;
     margin: 10px 10px 20px 20px;
 	box-sizing: border-box;
 	border: 1px solid black;
-  }
-
+}
 
 input[type=submit] {
 	display: flex;
@@ -381,11 +383,11 @@ input[type=submit] {
 	border: 1px solid black;
     margin-bottom: 50px;
     margin-left: 20px ;
-  }
-
+}
 
 
 /* ----> FOOTER <---- */
+
 footer {
     background-image: url(../images/Image_6.png);
     background-size: cover;
@@ -413,6 +415,448 @@ footer h3 {
 
 footer h6 {
     padding-bottom: 10px;
+}
+
+
+
+
+
+
+ /* ================================
+            TABLET STYLES
+   ================================  */
+
+@media screen and (min-width: 760px) {
+
+.container {
+    width: 706px;
+    margin: 0 auto;
+}
+
+
+/* ----> VISION <---- */
+
+.section-vision img {
+    display: flex;
+    margin-left: 220px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-vision h2 {
+    text-align: center;
+}
+
+.section-vision p {
+    text-align: center;
+}
+
+
+/* ----> MISSION <---- */
+
+.section-mission img {
+    display: flex;
+    margin-left: 220px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-mission h2 {
+    text-align: center;
+}
+
+.section-mission p {
+    text-align: center;
+}
+
+/* ----> DELIVERY <---- */
+
+.section-delivery{
+    margin-top: -50px;
+}
+
+.section-delivery h2 {
+    text-align: center;
+}
+
+.section-delivery p {
+    text-align: center;
+}
+
+
+/* ----> INFO <---- */
+
+.section-info {
+    background-color: #EDFFE3;
+    margin-top: -0px;
+    padding-bottom: 30px;
+ }
+    
+.section-info h2 {
+    text-align: center;
+}
+    
+.section-info p {
+    text-align: center;
+ }
+     
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+        
+    grid-template-areas:
+        "a a a a a a"
+        "b b b c c c"
+        "d d d d d d"
+        "e e e f f f";
+}   
+    
+.info :nth-child(1) {grid-area: a}
+.info :nth-child(2) {grid-area: b}
+.info :nth-child(3) {grid-area: c}
+.info :nth-child(4) {grid-area: d}
+.info :nth-child(5) {grid-area: e}
+.info :nth-child(6) {grid-area: f}
+
+
+/* ----> CEO <---- */
+
+.section-ceo h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+    
+.section-ceo h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+    
+.section-ceo p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+        
+}
+
+
+/* ----> SEND <---- */
+
+input[type=text] {
+    width: 100%;
+    padding: 5px 20px;
+    margin: 2px 0 2px 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+input[id=message] {
+    width: 100%;
+    padding: 50px 20px;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+        
+}
+
+input[type=submit] {
+    display: flex;
+    background-color: #67BC45;
+    color: #9F1D21;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-bottom: 50px;       
+}
+
+}
+
+
+
+
+
+
+
+ /* ================================
+            DESKTOP STYLES
+   ================================  */
+
+@media screen and (min-width: 1200px) {
+
+.skip {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+    background: #9F1D21;
+    color: #67BC45;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+      
+.skip:focus {
+    transform: translateY(0%);
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 1em;
+
+}
+
+
+/* ----> NAV <---- */
+
+nav {
+    background-color: #EDFFE3;
+    height: 170px;
+}
+
+nav .container {
+    display: flex;
+    align-items: end;
+}   
+    
+nav ul {
+    display:flex;
+    align-items: end;
+    padding: 50px 10px 10px 450px;
+}
+
+.logo {
+    display: flex;
+    background-color: transparent;
+    padding-right: 10px;
+    margin: 0px 50px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* ----> VISION <---- */
+
+.section-vision .container{
+    border: 10px ridge #ffe3e8;
+    margin-bottom: 20px;
+}
+
+.section-vision img {
+    display: flex;
+    margin-left: 450px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.section-vision h2 {
+    text-align: center;
+}
+
+.section-vision p {
+    text-align: center;
+}
+
+
+/* ----> MISSION <---- */
+
+.section-mission .container{
+    border: 10px ridge #d4dfff;
+    margin-bottom: 20px;
+}
+
+.section-mission img {
+    display: flex;
+    margin-left: 450px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-mission h2 {
+    text-align: center;
+}
+
+.section-mission p {
+    text-align: center;
+}
+
+/* ----> DELIVERY <---- */
+
+.section-delivery{
+    margin-top: -20px;
+}
+
+.section-delivery .container{
+    border: 10px ridge #EDFFE3;
+    margin-bottom: 20px;
+}
+
+.section-delivery img {
+    display: flex;
+    margin-left: 450px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-delivery h2 {
+    text-align: center;
+}
+
+.section-delivery p {
+    text-align: center;
+}
+
+
+/* ----> HISTORY <---- */
+
+.section-history .container{
+    border: 10px ridge #ffe3e8;
+    margin-bottom: 20px;
+}
+
+
+/* ----> WHY <---- */
+
+.section-why .container{
+    border: 10px ridge #d4dfff;
+    margin-bottom: -50px;
+}
+
+
+/* ----> INFO <---- */
+
+.section-info .container {
+    border: 10px ridge #ffe3e8;
+}
+
+.section-info {
+    background-color: #EDFFE3;
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+
+.section-info h2 {
+    text-align: center;
+}
+
+.section-info p {
+    text-align: center;
+}
+ 
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    grid-template-areas:
+    "a a a a a a"
+    "b b b c c c"
+    "d d d d d d"
+    "e e e f f f";
+}   
+
+.info :nth-child(1) {grid-area: a}
+.info :nth-child(2) {grid-area: b}
+.info :nth-child(3) {grid-area: c}
+.info :nth-child(4) {grid-area: d}
+.info :nth-child(5) {grid-area: e}
+.info :nth-child(6) {grid-area: f}
+
+
+/* ----> CEO <---- */
+
+.section-ceo .container {
+        background-color: #ffe3e8;
+        margin-top: -20px;
+        border: 10px ridge #d4dfff;
+}
+    
+    
+.section-ceo h2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+}
+    
+.section-ceo h3 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+}
+    
+.section-ceo p {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px;
+        text-align: center;
+        
+}
+
+
+/* ----> SEND <---- */
+
+.section-send .container {
+    background-color: #d4dfff;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    border: 10px ridge #d4dfff;
+}
+
+input[type=text] {
+        width: 100%;
+        padding: 5px 20px;
+        margin: 2px 0 2px 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+}
+
+input[id=message] {
+        width: 100%;
+        padding: 50px 20px;
+        margin: 10px 0 20px 0;
+        box-sizing: border-box;
+        border: 1px solid black;
+        
+}
+
+input[type=submit] {
+        display: flex;
+        background-color: #67BC45;
+        color: #9F1D21;
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid black;
+        margin-bottom: 50px;       
+}
+
+
 }
 
 
