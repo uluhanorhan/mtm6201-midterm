@@ -519,7 +519,7 @@ footer h6 {
 
 /* ----> CEO <---- */
 
-.section-ceo h2 {
+.section-ceo h2, .section-send h2 {
     font-size: 25px;
     font-weight: bold;
     margin: 20px;
@@ -528,7 +528,7 @@ footer h6 {
     text-align: center;
 }
     
-.section-ceo h3, .section-send h2 {
+.section-ceo h3, {
     font-size: 25px;
     font-weight: bold;
     margin: 20px;
