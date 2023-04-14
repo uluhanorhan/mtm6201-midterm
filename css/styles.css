@@ -519,7 +519,7 @@ footer h6 {
 
 /* ----> CEO <---- */
 
-.section-ceo h2, .section-send h2 {
+.section-ceo h2 {
     font-size: 25px;
     font-weight: bold;
     margin: 20px;
@@ -575,6 +575,14 @@ input[type=submit] {
     border: 1px solid black;
     margin-bottom: 50px;       
 }
+
+.section-send h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 
 }
 
